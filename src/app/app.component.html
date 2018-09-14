@@ -7,11 +7,23 @@
 
 
   <div>
-    <ul>
+    <ul *ngIf="!mobile">
       <li *ngFor="let link of navLinks" class="link" [routerLink]="[link.path]" [routerLinkActive]="['active-link']">
         {{link.name}}
       </li>
     </ul>
+    <ul *ngIf="mobile">
+        <li class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']">
+            <i class="fas fa-home"></i>            
+        </li>
+        <li class="link" [routerLink]="['/members']" [routerLinkActive]="['active-link']">
+            <i class="fa fa-users"></i>            
+        </li>
+        <li class="link" [routerLink]="['/notice-board']" [routerLinkActive]="['active-link']">
+          <i class="fas fa-flag-checkered"></i>            
+      </li>
+       
+      </ul>
     <div class="align router-outlet">
       <router-outlet></router-outlet>
     </div>
@@ -22,7 +34,7 @@
         <div style="    text-align: center;
         padding: 5%;">
           Leaders of the Week
-       
+
         </div>
         <div style="    text-align: center;
         padding: 5%;">
