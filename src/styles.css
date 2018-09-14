@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+ul li.link{
+    list-style: none;
+    text-decoration: none ;
+   
+}
+li{
+    display: inline-block ;
+    margin: auto;
+    width: 24%;
+    /* padding: 1% 0; */
+    text-align: center ;
+    font-size: 21px;
+
+}
+.align{
+    display: inline-block;
+    margin: 1%;
+    /* color: white; */
+}
+.router-outlet{
+    width : 75% ;
+}
+.notice-board{
+    width : 19% ;
+    background : skyblue ;
+    position: absolute;
+    color: #0014ff;
+    border-radius: 6px;
+}
+ul{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: #352a1c;
+    padding: 0 13px;
+}
+.social-media{
+    position: absolute;
+    top: 2%;
+    font-size: 300%;
+    left: 67%;
+    color: #0014ff;
+}
+li:hover{
+    background: rgb(83, 16, 241) ;
+}
+.active-link{
+    background : green ;
+}
+.notice{
+    margin: 0;
+    text-align: center;
+    
+    background: #d0a5a5;
+    
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.board-links div{
+    text-align: center ;
+}
+.home-section{
+    background: #9494ea;
+    color: black;
+    font-family: cursive;
+}

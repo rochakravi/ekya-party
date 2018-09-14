@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navLinks = [
+    {path:"/home", name:"Home"},
+    {path:"/members", name:"Members"},
+    {path:"/activity", name:"Activity"},
+    {path:"/gallery", name:"Gallery"},
+   
+  ]
 }

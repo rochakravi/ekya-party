@@ -1,8 +1,39 @@
-<div style="padding-left: 5%;">
+<div style="margin:0 5%;">
   <h1 style="color: #FF5722;
  ">Ekta Party</h1>
-</div>
+  <a href="https://www.facebook.com/jantaektapary">
+    <i class="fab fa-facebook-f social-media"></i>
+  </a>
 
-<div>
-  clousal
+
+  <div>
+    <ul>
+      <li *ngFor="let link of navLinks" class="link" [routerLink]="[link.path]" [routerLinkActive]="['active-link']">
+        {{link.name}}
+      </li>
+    </ul>
+    <div class="align router-outlet">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="align notice-board" [routerLink]="['/notice-board']">
+      <h4 class="notice">Notice board</h4>
+      <!-- <button [routerLink]="['/notice-board']" class="">Notice Board</button> -->
+      <div class="board-links">
+        <div style="    text-align: center;
+        padding: 5%;">
+          Leaders of the Week
+       
+        </div>
+        <div style="    text-align: center;
+        padding: 5%;">
+          Activity
+        </div>
+        <div style="    text-align: center;
+        padding: 5%;">
+          Upcoming to do List
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
