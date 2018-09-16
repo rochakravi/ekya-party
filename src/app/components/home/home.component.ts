@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ApiService} from '../../services/api.service' ;
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  suggestions ;
+
+  constructor(private api:ApiService, private router: Router) { }
 
   ngOnInit() {
+  	this.api.getData().subscribe(
+  		response => {
+  			
+        this.suggestions = response ;
+        console.log(this.suggestions);
+  		})
+
   }
+
+  postSuggestion(){
+    //this.router.navigate[('/notice-board')]
+    this.router.navigate(['/notice-board/suggestion']);
+  }
+
 
 }

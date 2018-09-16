@@ -1,14 +1,24 @@
+.notice-links{
+  display: inline-block;
+  width: 49%;
+  margin : auto;
+}
+
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     /* margin: auto; */
     text-align: center;
     font-family: arial;
+    width: 78%;
   }
   
   .title {
     color: grey;
-    font-size: 18px;
+    font-size: 16px;
+    margin : 0 ;
   }
   
   button {
@@ -38,12 +48,12 @@
 }
 .leaders{
     display : inline-block ;
-    margin: 2%;
-    width: 300px;
+    /*margin: 0 10%;*/
+    width: 100%;
 }
 .fab {
     font-family: "Font Awesome 5 Brands";
-    font-size: 200%;   
+    font-size: 100%;   
     color : #3162d2 ;
 }
 

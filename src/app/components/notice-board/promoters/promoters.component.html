@@ -1,0 +1,16 @@
+<h4 class="home-section" style="margin:0">Promoters of the week</h4>
+    <details class="details">
+      <summary>Promoters</summary>
+      <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
+        <img class="" [src]="[leader.image]" style="width: 100%;">
+        <h1 style="margin:0;font-size: 17px;font-weight: bold;">{{leader.name}}</h1>
+        <p class="title">{{leader.title}}</p>                
+        <div >
+          <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
+          <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
+          <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+          <a [href]="[leader.facebook]"  target="_blank"><i class="fab fa-facebook-f"></i></a> 
+        </div>
+        <p><button class="" style="width: 94%;font-size: 13px;">Contact</button></p>
+      </div>
+    </details>

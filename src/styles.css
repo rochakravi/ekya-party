@@ -13,48 +13,27 @@ li{
     font-size: 21px;
 
 }
-.align{
-    display: inline-block;
-    margin: 1%;
-    /* color: white; */
-}
-.router-outlet{
-    width : 75% ;
-}
-.notice-board{
-    width : 19% ;
-    background : skyblue ;
-    position: absolute;
-    color: #0014ff;
-    border-radius: 6px;
-}
+
+
 ul{
     background-image: linear-gradient(to bottom right, red, yellow);
     color: #352a1c;
-    padding: 0 13px;
+   /* padding: 0 13px;*/
 }
-.social-media{
+/*.social-media{
     position: absolute;
     top: 2%;
     font-size: 300%;
     left: 67%;
     color: #0014ff;
-}
-li:hover{
+}*/
+/*li:hover{
     background: rgb(83, 16, 241) ;
-}
+}*/
 .active-link{
     background : green ;
 }
-.notice{
-    margin: 0;
-    text-align: center;
-    
-    background: #d0a5a5;
-    
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
+
 
 .board-links div{
     text-align: center ;
@@ -64,3 +43,34 @@ li:hover{
     color: black;
     font-family: cursive;
 }
+details{
+    margin: 0 9%;
+    border: none;
+    font-size: 10px;
+}
+.home-section{
+    background: #9494ea;
+    color: black;
+    font-family: cursive;
+    font-size: 13px ;
+    padding: 0 0 0 1%;
+}
+summary{
+    outline:none;
+    color: #673ab7;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+
+.leaders{
+    display : inline-block ;
+    /*margin: 0 10%;*/
+    width: 100%;
+}
+
+
+
+
+
+

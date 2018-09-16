@@ -1,0 +1,65 @@
+/*top header*/
+.header-section{
+	margin: 3% 0 1% 0;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}	
+.top-header{
+	display : inline-block;
+}
+.logo{
+
+    width: 50px;
+    float: left;
+    margin-right: 5%;
+}
+.logo-heading{
+	font-size: 22px;
+    color: #FF5722;
+    margin: 0 5% 0 0;
+    text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+}
+/*.social-media{
+    color: #4267b2;
+}*/
+.facebook{
+	
+	color: #4267b2;   
+}
+.youtube{
+	
+    color: #e01f1f;     
+}
+.gmail{
+	
+    color: #ec2b2b;     
+}
+.twitter{
+	
+    color: #4267b2;     
+}
+.navigation-link{
+	margin : 2% 0 ;
+}
+nav{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: #352a1c;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+   /* padding: 0 13px;*/
+}
+.link{
+	padding: 0 7%;
+
+}
+.footer{
+    background: black;
+    color: #ff5722;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 100%;
+    margin-bottom: 1%;
+}
+
+
+
+

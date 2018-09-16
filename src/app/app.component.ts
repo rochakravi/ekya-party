@@ -19,7 +19,7 @@ export class AppComponent {
 
   constructor(){   
       this.onResize();
-      if(this.screenWidth<500){
+      if(this.screenWidth<560){
         //alert(this.screenWidth);
         this.mobile = true ;
 

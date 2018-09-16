@@ -1,0 +1,14 @@
+<header class="home-section" >Suggestion on Agenda</header>      
+      <div style="    height: 33px;    margin-top: 1%;">
+        <label for="sug-subject">Subject</label>
+        <input type="textarea" name="" [(ngModel)]="subject" style="float: right;">
+      </div>
+      <div>
+        <label for="sug-subject">Words</label>
+        <input type="textarea" name="" [(ngModel)]="description" style="float: right;height:50px">
+      </div>
+      <div style="position: fixed;
+    top: 62%;
+    left: 34%;">
+      	<button style="float:right;color:green" (click)="addSuggetion()">Suggest</button>
+      </div>

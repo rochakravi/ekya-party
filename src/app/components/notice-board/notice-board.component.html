@@ -1,16 +1,57 @@
+
+<section>
+  <article>
+    <h4 class="home-section">Suggestion Munch</h4> 
+
+    <button [routerLink]="['./suggestion']" class="notice-links" >Party Agenda</button>
+    <button [routerLink]="['./issue']" class="notice-links" >Current Issue</button>
+
+    <h4 class="home-section">Leaders</h4>
+     <button [routerLink]="['./promoters']" class="notice-links" >Promoters</button>
+     <button [routerLink]="['./highly-active']" class="notice-links" >Highly Active</button>    
+    <router-outlet>
+
+
+    </router-outlet>
+    
+   <!--  <h4 class="home-section">Leaders of the week</h4>
+    <details class="details">
+      <summary>Promoters</summary>
+      <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
+        <img class="" [src]="[leader.image]" style="width: 100%;">
+        <h1 style="margin:0;font-size: 17px;font-weight: bold;">{{leader.name}}</h1>
+        <p class="title">{{leader.title}}</p>                
+        <div >
+          <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
+          <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
+          <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+          <!--<a [href]="[leader.facebook]"  target="_blank"><i class="fab fa-facebook-f"></i></a> 
+        </div>
+        <p><button class="" style="width: 94%;font-size: 13px;">Contact</button></p>
+      </div>
+    </details> -->
+    
+  </article>
+  
+</section>
+
+
+
+
+
 <div>
-    <div *ngIf="!mobile" >
-      <h4 class="home-section">Leaders of the Week</h4>
-     
-            <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
-                <img src="/w3images/team2.jpg" alt="image" style="width:100%">
-                <h1>{{leader.name}}</h1>
-                <p class="title">{{leader.title}}</p>
-                <!-- <p>Harvard University</p> -->
+  <div *ngIf="!mobile" >
+    <h4 class="home-section">Leaders of the Week</h4>
+
+    <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
+      <img [src]="['leader.image']" alt="image" style="width:100%">
+      <h1>{{leader.name}}</h1>
+      <p class="title">{{leader.title}}</p>
+                <!-- <p>Harvard University</p> 
                 <div style="margin: 24px 0;">
-                  <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
-                  <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
-                  <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+                  <!-- <a href="#"><i class="fa fa-dribbble"></i></a> 
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
+                  <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   
                   <a href="#"><i class="fab fa-facebook-f"></i></a> 
                </div>
                <p><button>Contact</button></p>
@@ -25,11 +66,12 @@
                   <img src="/w3images/team2.jpg" alt="image" style="width:100%">
                   <h1>{{leader.name}}</h1>
                   <p class="title">{{leader.title}}</p>
-                  <!-- <p>Harvard University</p> -->
-                  <div style="margin: 24px 0;">
-                    <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
-                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
-                    <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
+                  <!-- <p>Harvard University</p> 
+              
+    <div style="margin: 24px 0;">
+      <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
+      <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
+                    <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   
                     <a href="#"><i class="fab fa-facebook-f"></i></a> 
                  </div>
                  <p><button>Contact</button></p>
@@ -55,4 +97,4 @@
         
        
     </div>
-  </div>
+  </div> -->

@@ -1,6 +1,72 @@
+<section>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+</section>
+
 <div>
-  <h4 class="home-section">Steps towards Huminity with Our Unity</h4>
-  <p>We will contineously work on Huminty with Unity</p>
-  <p>We will contineously claim for the rights which should be given to those who are hardly able to keep themself alive by thei own inputs</p>
-  <p>We will maintain equility by providing specail oppertunities to weaker people of our society</p>
+	<h4 class="home-section align-suggestion"
+	style="width:49%">Janta Suggestions </h4>
+	<button class="align-suggestion post-suggestion" (click)="postSuggestion()"
+	style="width:49%">Post Your Suggestions</button>	
+	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
+		<div class="comment" style="width:19%;padding-bottom: 2%;    margin-top: 0;">
+			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
+				Name
+			</h6>
+			<img src="../assets/pranav.jpg" style="width : 80%;border-radius: 50%;" >
+		</div>
+		<div class="comment"  style="width:60%">
+			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
+				{{suggestion.suggsestion_subject}}
+			</h6>
+			<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div>
+		</div>
+		<!-- <h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
+			{{suggestion.suggsestion_subject}}
+		</h6>
+		<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div> -->
+		<div style="font-size: 6px;padding-left: 25%;margin-bottom: 1%">
+			<button style="margin-right: 20%">Like</button>
+			<button style="">Share</button>
+		</div>
+		<div style="background: lightgreen;height: 1px;"></div>
+	</div>
 </div>
