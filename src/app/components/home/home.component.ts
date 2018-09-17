@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  reverseResponse ;
   suggestions ;
 
   constructor(private api:ApiService, private router: Router) { }
@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   	this.api.getData().subscribe(
   		response => {
-  			
-        this.suggestions = response ;
+  			this.reverseResponse = response ;
+        this.suggestions = this.reverseResponse.reverse(); ;
         console.log(this.suggestions);
   		})
 
