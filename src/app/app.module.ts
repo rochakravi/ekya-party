@@ -6,11 +6,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {ApiService} from './services/api.service' ;
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
 import { MembersComponent } from './components/members/members.component';
 import { HomeComponent } from './components/home/home.component';
 import { ActivityComponent } from './components/activity/activity.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NoticeBoardComponent } from './components/notice-board/notice-board.component';
+
+import {
+  SocialLoginModule,
+  AuthServiceConfig,
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+} from "angular5-social-login";
 
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -19,9 +27,31 @@ import { CurrentIssueComponent } from './components/notice-board/current-issue/c
 import { PromotersComponent } from './components/notice-board/promoters/promoters.component';
 import { ActiveComponent } from './components/notice-board/active/active.component';
 
+
+// Configs 
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+      [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider("330898017483353")
+          // provider: new FacebookLoginProvider("Your-Facebook-app-id")
+        }
+        // {
+        //   id: GoogleLoginProvider.PROVIDER_ID,
+        //   provider: new GoogleLoginProvid("Your-Google-Client-Id")
+        // },
+      ]
+  );
+  return config;
+}
+
+
+
 const routes : Routes = [
-  {path :'', component:HomeComponent},
+  {path :'', component:LoginComponent},
   {path :'home', component:HomeComponent},
+  {path :'login', component:LoginComponent},
   {path :'members', component:MembersComponent},
   {path :'activity', component:ActivityComponent},
   {path :'gallery', component:GalleryComponent},
@@ -61,15 +91,21 @@ const routes : Routes = [
     CurrentIssueComponent,
     PromotersComponent,
     ActiveComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     AngularFontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SocialLoginModule
   ],
-  providers: [ApiService],
+  providers: [ApiService,
+    {
+      provide: AuthServiceConfig,
+      useFactory: getAuthServiceConfigs
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

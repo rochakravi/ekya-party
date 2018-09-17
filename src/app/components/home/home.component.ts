@@ -11,13 +11,18 @@ import {Router} from '@angular/router';
 export class HomeComponent implements OnInit {
   reverseResponse ;
   suggestions ;
+  socialName ;
+  socialPic ;
 
   constructor(private api:ApiService, private router: Router) { }
 
   ngOnInit() {
+    this.socialName = JSON.parse(sessionStorage.getItem("userInfo")).name ;
+    this.socialPic = JSON.parse(sessionStorage.getItem("userInfo")).image ;
   	this.api.getData().subscribe(
   		response => {
-  			this.reverseResponse = response ;
+        this.reverseResponse = response ;
+        
         this.suggestions = this.reverseResponse.reverse(); ;
         console.log(this.suggestions);
   		})

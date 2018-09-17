@@ -46,12 +46,13 @@
 	style="width:49%">Janta Suggestions </h4>
 	<button class="align-suggestion post-suggestion" (click)="postSuggestion()"
 	style="width:49%">Post Your Suggestions</button>	
+	
 	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
 		<div class="comment" style="width:19%;padding-bottom: 2%;    margin-top: 0;">
 			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				Name
-			</h6>
-			<img src="../assets/pranav.jpg" style="width : 80%;border-radius: 50%;" >
+				{{socialName}}
+			</h6>			
+			<img [src]="[socialPic]" style="width : 80%;border-radius: 50%;">
 		</div>
 		<div class="comment"  style="width:60%">
 			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">

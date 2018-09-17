@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HostListener } from "@angular/core";
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,11 +18,12 @@ export class AppComponent {
   screenWidth ;
   mobile : boolean = false ;
 
-  constructor(){   
+  constructor(private router:Router){   
       this.onResize();
       if(this.screenWidth<560){
         //alert(this.screenWidth);
         this.mobile = true ;
+        this.router.navigate(['/login'])
 
       }    
   }

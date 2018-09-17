@@ -7,13 +7,15 @@ import {Observable} from 'rxjs';
 
 @Injectable()
 export class ApiService {
-	// testing api url --  https://api.myjson.com/bins/15vlhc
+  // testing api url --  https://api.myjson.com/bins/15vlhc
+  
+  socialUser ;
 
   constructor(private http : HttpClient) {
   }
 
   getData(): Observable<any>{
-    //  return this.http.get('https://ekta-p.herokuapp.com/suggestions') //prod
+     // return this.http.get('https://ekta-p.herokuapp.com/suggestions') //prod
       return this.http.get('https://ekta-pa-dev.herokuapp.com/suggestions') //dev
    
   }
