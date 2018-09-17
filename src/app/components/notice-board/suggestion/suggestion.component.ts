@@ -16,10 +16,15 @@ export class SuggestionComponent implements OnInit {
   }
   addSuggetion(){
   	let subject = this.subject ;
-  	let description = this.description ;
+		let description = this.description ;
+		let socialName = JSON.parse(sessionStorage.getItem("userInfo")).name ;
+    let socialPic = JSON.parse(sessionStorage.getItem("userInfo")).image ;
+		
   	let data ={ 
   		"suggsestion_subject": subject ,
-        "suggsestion_description": description
+			"suggsestion_description": description,
+			"social_name" : socialName,
+			"social_pic" : socialPic
   	}
   	console.log(data);
   	this.subject = "" ;
