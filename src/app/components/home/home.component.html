@@ -1,4 +1,17 @@
-<section>
+<div style="    text-align: center;
+    background: green;
+    color: white;
+    border-radius: 0 0 12px 12px;
+    margin: 0 32%;" (click)="showIdeology()" >
+	Show Ideology
+</div>
+
+<div id="myModal" class="modal" *ngIf="dontShow">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="closeIdeology()">&times;</span>
+    <section style="margin-top: 19%;">
 	<article>
 		<h4 class="home-section">Steps towards Huminity with Unity</h4>
 		<details class="details">
@@ -41,32 +54,74 @@
 	</article>
 </section>
 
-<div>
-	<h4 class="home-section align-suggestion"
-	style="width:49%">Janta Suggestions </h4>
-	<button class="align-suggestion post-suggestion" (click)="postSuggestion()"
-	style="width:49%">Post Your Suggestions</button>	
-	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
-		<div class="comment" style="width:19%;padding-bottom: 2%;    margin-top: 0;">
-			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				Name
-			</h6>
-			<img src="../assets/pranav.jpg" style="width : 80%;border-radius: 50%;" >
-		</div>
-		<div class="comment"  style="width:60%">
-			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				{{suggestion.suggsestion_subject}}
-			</h6>
-			<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div>
-		</div>
-		<!-- <h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-			{{suggestion.suggsestion_subject}}
-		</h6>
-		<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div> -->
-		<div style="font-size: 6px;padding-left: 25%;margin-bottom: 1%">
-			<button style="margin-right: 20%">Like</button>
-			<button style="">Share</button>
-		</div>
-		<div style="background: lightgreen;height: 1px;"></div>
+  </div>
+
+</div> 
+
+<section *ngIf="dontShow">
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+	<article>
+		<h4 class="home-section">Steps towards Huminity with Unity</h4>
+		<details class="details">
+			<summary>Copyright 1999-2018.</summary>
+			
+			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			<p> - by Refsnes Data. All Rights Reserved.</p>
+		</details>
+		
+	</article>
+</section>
+
+
+
+	<div>
+		<h4 class="home-section align-suggestion" style="width:49%">Janta Suggestions </h4>
+		<button class="align-suggestion post-suggestion" (click)="postSuggestion()"	style="width:49%">Post Your Suggestions</button>
 	</div>
-</div>
+
+	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
+		<div style="background: lightblue;">						
+			<img [src]="[suggestion.social_pic]" style="width : 11%;border-radius: 50%;">
+			<span style="font-size: 11px;font-weight: bold;">{{suggestion.social_name}}</span>
+			
+		</div>
+		<div style="width:100%">			
+			<div style="font-size: 11px;color: black;font-family: unset;">{{suggestion.suggsestion_description}}</div>
+		</div>		
+		<div style="border-bottom: 1px solid grey;border-top: 1px solid grey;height: 20px;margin-bottom: 1%;">
+		
+		</div>
+	</div>
+		
+		
+		
+
