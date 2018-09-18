@@ -26,6 +26,7 @@ import { SuggestionComponent } from './components/notice-board/suggestion/sugges
 import { CurrentIssueComponent } from './components/notice-board/current-issue/current-issue.component';
 import { PromotersComponent } from './components/notice-board/promoters/promoters.component';
 import { ActiveComponent } from './components/notice-board/active/active.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 // Configs 
@@ -52,6 +53,7 @@ const routes : Routes = [
   {path :'', component:LoginComponent},
   {path :'home', component:HomeComponent},
   {path :'login', component:LoginComponent},
+  {path :'contact', component:ContactComponent},
   {path :'members', component:MembersComponent},
   {path :'activity', component:ActivityComponent},
   {path :'gallery', component:GalleryComponent},
@@ -92,6 +94,7 @@ const routes : Routes = [
     PromotersComponent,
     ActiveComponent,
     LoginComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

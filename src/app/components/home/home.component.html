@@ -1,4 +1,18 @@
-<section>
+<div style="    text-align: center;
+    background: green;
+    color: white;
+    border-radius: 0 0 12px 12px;
+    margin: 0 32%;" (click)="showIdeology()">
+	Show Ideology
+</div>
+
+
+<div id="myModal" class="modal" *ngIf="ideology">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="closeIdeology()">&times;</span>
+    <section style="margin-top: 19%;">
 	<article>
 		<h4 class="home-section">Steps towards Huminity with Unity</h4>
 		<details class="details">
@@ -41,6 +55,11 @@
 	</article>
 </section>
 
+  </div>
+
+</div>
+
+
 <div>
 	<h4 class="home-section align-suggestion"
 	style="width:49%">Janta Suggestions </h4>
@@ -50,9 +69,9 @@
 	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
 		<div class="comment" style="width:19%;padding-bottom: 2%;    margin-top: 0;">
 			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				{{socialName}}
+				{{suggestion.social_name}}
 			</h6>			
-			<img [src]="[socialPic]" style="width : 80%;border-radius: 50%;">
+			<img [src]="[suggestion.social_pic]" style="width : 80%;border-radius: 50%;">
 		</div>
 		<div class="comment"  style="width:60%">
 			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">

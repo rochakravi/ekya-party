@@ -9,10 +9,12 @@ import {Router} from '@angular/router' ;
 export class SuggestionComponent implements OnInit {
 	subject = "" ;
 	description = "" ;
+  socialImage ;
 
   constructor(private api : ApiService, private router : Router) { }
 
   ngOnInit() {
+    this.socialImage = JSON.parse(sessionStorage.getItem("userInfo")).image ;
   }
   addSuggetion(){
   	let subject = this.subject ;

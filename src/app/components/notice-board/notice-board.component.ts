@@ -28,7 +28,7 @@ export class NoticeBoardComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.url = '../assets/'+'pranav.jpg'
+    //this.url = '../assets/'+'pranav.jpg'
   }
   detailsFirst(){
     //this.second = !this.second ;

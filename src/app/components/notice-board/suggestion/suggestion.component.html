@@ -1,3 +1,20 @@
+
+
+<div style="margin-top:1%">
+  <img [src]="[socialImage]" style="width : 23%;border-radius: 50%;margin-top: -23%;">
+  <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter your comments here" style="width: 72%;" [(ngModel)]="description">
+  </textarea>
+</div>
+<div style="    text-align: center;
+margin-top: 2%;">
+<button class="suggest"  (click)="addSuggetion()">Suggest</button>
+</div>
+
+
+
+
+<!-- 
+
 <header class="home-section" >Suggestion on Agenda</header>      
       <div style="    height: 33px;    margin-top: 1%;">
         <label for="sug-subject">Subject</label>
@@ -7,8 +24,13 @@
         <label for="sug-subject">Words</label>
         <input type="textarea" name="" [(ngModel)]="description" style="float: right;height:50px">
       </div>
-      <div style="position: fixed;
-    top: 62%;
-    left: 34%;">
-      	<button style="" (click)="addSuggetion()">Suggest</button>
-      </div>
+      <div style="    text-align: center;
+    margin-top: 2%;">
+      	<button style="    padding: 5px 90px;
+    font-size: 13px;
+    background: #3d4971;
+    color: white;
+    border: none;
+    text-align: center;
+    margin: 3%;" (click)="addSuggetion()">Suggest</button>
+      </div> -->

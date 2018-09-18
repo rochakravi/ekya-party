@@ -13,13 +13,14 @@ export class HomeComponent implements OnInit {
   suggestions ;
   socialName ;
   socialPic ;
+  ideology :boolean = false ;
 
   constructor(private api:ApiService, private router: Router) { }
 
   ngOnInit() {
-    this.socialName = JSON.parse(sessionStorage.getItem("userInfo")).name ;
-    this.socialPic = JSON.parse(sessionStorage.getItem("userInfo")).image ;
-  	this.api.getData().subscribe(
+   //  this.socialName = JSON.parse(sessionStorage.getItem("userInfo")).name ;
+   //  this.socialPic = JSON.parse(sessionStorage.getItem("userInfo")).image ;
+  	 this.api.getData().subscribe(
   		response => {
         this.reverseResponse = response ;
         
@@ -32,6 +33,12 @@ export class HomeComponent implements OnInit {
   postSuggestion(){
     //this.router.navigate[('/notice-board')]
     this.router.navigate(['/notice-board/suggestion']);
+  }
+  showIdeology(){
+    this.ideology = !this.ideology ;
+  }
+  closeIdeology(){
+    this.ideology = !this.ideology ;
   }
 
 
