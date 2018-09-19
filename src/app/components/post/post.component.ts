@@ -17,13 +17,14 @@ export class PostComponent implements OnInit {
 	  this.socialImage = JSON.parse(sessionStorage.getItem("userInfo")).image ;
   }
   addSuggetion(){
-  	let subject = this.subject ;
+  	
 		let description = this.description ;
 		let socialName = JSON.parse(sessionStorage.getItem("userInfo")).name ;
     let socialPic = JSON.parse(sessionStorage.getItem("userInfo")).image ;
+
 		
   	let data ={ 
-  		"suggsestion_subject": subject ,
+  		
 			"suggsestion_description": description,
 			"social_name" : socialName,
 			"social_pic" : socialPic
@@ -32,9 +33,21 @@ export class PostComponent implements OnInit {
   	this.description = "" ;
   	this.api.sendData(data).subscribe(
   			response =>{
-					//this.showSuccess();  				
+					this.fetchSuggestions();
   			})
-  	this.router.navigate(['/home'])
+  	 
+     setTimeout(() => {
+     // console.log("set time out");
+      this.router.navigate(['/home']) ;
+    }, 1000);
+  }
+  fetchSuggestions(){
+    this.api.getData().subscribe(
+      response => {
+        console.log(response);
+        sessionStorage.setItem("suggestions", response)
+      })
+
   }
 
 }
