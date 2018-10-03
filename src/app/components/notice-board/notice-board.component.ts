@@ -16,6 +16,28 @@ export class NoticeBoardComponent implements OnInit {
     {name:"Kishan",title:"Activist",image:"../assets/rabhusan.jpg",organisation:"",gmail:"",facebook:"https://www.facebook.com/ravibhusan.kumar.77",twitter:"",linkedin:"",contact:""},
     {name:"Rohan",title:"Promoter",image:"../assets/chandra.jpg",organisation:"",gmail:"",facebook:"https://www.facebook.com/profile.php?id=100007495692564",twitter:"",linkedin:"",contact:""},
   ]
+
+  content : {}={
+    "agenda" : [
+    {name:"unity",title:"Step towards humanity with unity"},
+    {name:"equality",title:"Attempt to achieve equality"},
+    {name:"problem",title:"Attention on common problem"},
+    {name:"manipulation",title:"dismissal of manipulation based on cast and religion."},
+    {name:"leadership",title:"Transformation of Indian political leadership."},
+    {name:"observation",title:"Approval on observation by people on their elected leaders(MP/MLA)."},
+    {name:"bussiness",title:"Local business promotion, motivation to entrepreneurs and elevation to employment"},
+    {name:"skill",title:"Promotion to Skill development in all the sectors."},
+    {name:"education",title:"Free education"},
+    {name:"promote",title:"Special attention to economically undeveloped people"},
+    ]
+
+     
+  }
+    
+  agenda ;
+
+  
+
   screenWidth ;
   mobile : boolean = false ;
   constructor() {
@@ -28,7 +50,8 @@ export class NoticeBoardComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.url = '../assets/'+'pranav.jpg'
+    this.url = '../assets/'+'pranav.jpg' ;
+    this.agenda = this.content['agenda'];
   }
   detailsFirst(){
     //this.second = !this.second ;

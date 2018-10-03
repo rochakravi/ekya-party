@@ -1,100 +1,38 @@
-
-<section>
-  <article>
-    <h4 class="home-section">Suggestion Munch</h4> 
-
-    <button [routerLink]="['./suggestion']" class="notice-links" >Party Agenda</button>
-    <button [routerLink]="['./issue']" class="notice-links" >Current Issue</button>
-
-    <h4 class="home-section">Leaders</h4>
-     <button [routerLink]="['./promoters']" class="notice-links" >Promoters</button>
-     <button [routerLink]="['./highly-active']" class="notice-links" >Highly Active</button>    
-    <router-outlet>
-
-
-    </router-outlet>
-    
-   <!--  <h4 class="home-section">Leaders of the week</h4>
-    <details class="details">
-      <summary>Promoters</summary>
-      <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
-        <img class="" [src]="[leader.image]" style="width: 100%;">
-        <h1 style="margin:0;font-size: 17px;font-weight: bold;">{{leader.name}}</h1>
-        <p class="title">{{leader.title}}</p>                
-        <div >
-          <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
-          <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
-          <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   -->
-          <!--<a [href]="[leader.facebook]"  target="_blank"><i class="fab fa-facebook-f"></i></a> 
-        </div>
-        <p><button class="" style="width: 94%;font-size: 13px;">Contact</button></p>
-      </div>
-    </details> -->
-    
-  </article>
+<div style="text-align: center">
+  <h4 class="header" style="color:green;">हम निम्नलिखित चीजों को बढ़ावा देते हैं</h4>
+  <h4 class="header" style="color:#f35a0e;">We promote following things:- </h4>
   
-</section>
+  <div>
+    <h4 class="key-points" style="color: blue;">Key points:-</h4>
+    <h6 class="points-eng">Unity among us</h6>
+    <h6 class="points-hin">हमारे बीच एकता</h6>
+    <h6 class="points-eng">boost to Indian business</h6>
+    <h6 class="points-hin">भारतीय व्यापार को बढ़ावा देना</h6>
+    <h6 class="points-eng">Skill Development</h6>
+    <h6 class="points-hin">कौशल विकास</h6>
+  </div>
+  <div style="height: 1px;
+    background: green;
+    margin: 0 10%;">
+  </div>
+  <div>
+    <h6 style="color:green">एकता के साथ मानवता की ओर एक कदम </h6>    
+    <h6 style=" color: #f35a0e;">A step towards humanity with Unity</h6>
+     <h6 style="color:green">समानता हासिल करने का प्रयास</h6>    
+    <h6 style=" color: #f35a0e;">Attempt to achieve equality</h6>
+     <h6 style="color:green">आम समस्या पर ध्यान</h6>    
+    <h6 style=" color: #f35a0e;">Attention on common problem</h6>
+     <h6 style="color:green">जोड़-तोड़ राजनीति, जाति और धर्म के आधार पर</h6>    
+    <h6 style=" color: #f35a0e;">dismissal of manipulation based on cast and religion</h6>
+     <h6 style="color:green">भारतीय व्यापार को बढ़ावा देना</h6>    
+    <h6 style=" color: #f35a0e;">Local business promotion, motivation to entrepreneurs and elevation to employment</h6>
+     <h6 style="color:green">कौशल विकास</h6>    
+    <h6 style=" color: #f35a0e;">Promotion to Skill development in all the sectors</h6>
+     <h6 style="color:green">मुफ्त शिक्षा</h6>    
+    <h6 style=" color: #f35a0e;">Free education </h6>
+     <h6 style="color:green">आर्थिक रूप से अविकसित लोगों पर विशेष ध्यान</h6>    
+    <h6 style=" color: #f35a0e;">Special attention to economically undeveloped people</h6>
+  </div>
+</div>
 
-
-
-
-
-<div>
-  <div *ngIf="!mobile" >
-    <h4 class="home-section">Leaders of the Week</h4>
-
-    <div class="card leaders" *ngFor="let leader of leadersOfWeek" >
-      <img [src]="['leader.image']" alt="image" style="width:100%">
-      <h1>{{leader.name}}</h1>
-      <p class="title">{{leader.title}}</p>
-                <!-- <p>Harvard University</p> 
-                <div style="margin: 24px 0;">
-                  <!-- <a href="#"><i class="fa fa-dribbble"></i></a> 
-                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
-                  <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   
-                  <a href="#"><i class="fab fa-facebook-f"></i></a> 
-               </div>
-               <p><button>Contact</button></p>
-              </div>
-       
-      
-    </div>
-    <div *ngIf="mobile" >
-        <h4 class="home-section">Leaders of the Week</h4>
-       
-              <div class="card leaders" *ngFor="let leader of leadersOfWeek" style="width:78%" >
-                  <img src="/w3images/team2.jpg" alt="image" style="width:100%">
-                  <h1>{{leader.name}}</h1>
-                  <p class="title">{{leader.title}}</p>
-                  <!-- <p>Harvard University</p> 
-              
-    <div style="margin: 24px 0;">
-      <!-- <a href="#"><i class="fa fa-dribbble"></i></a>  -->
-      <!-- <a href="#"><i class="fab fa-twitter"></i></a>   -->
-                    <!-- <a href="#"><i class="fa fa-linkedin"></i></a>   
-                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
-                 </div>
-                 <p><button>Contact</button></p>
-                </div>
-         
-        
-      </div>
-    <div  >
-        <h4 class="home-section">Activities</h4>
-        <div class="w3-container">
-            <h2>Photo Card</h2>
-          
-            <div class="w3-card-4" style="width:50%">
-              <img src="img_snowtops.jpg" alt="Norway" style="width:100%">
-              <div class="w3-container w3-center">
-                <p>The Italian / Austrian Alps</p>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div  >
-        <h4 class="home-section">Upcoming to do List</h4>
-        
-       
-    </div>
-  </div> -->
+<app-gallery></app-gallery>

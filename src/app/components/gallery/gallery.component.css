@@ -1,0 +1,19 @@
+app-gallery{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+footer{
+	background-color: pink;
+}
+
+/*footer{
+position:fixed;
+bottom:0px;
+background-color:pink;
+width:100%;
+text-align: center;
+}*/
+

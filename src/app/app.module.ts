@@ -58,7 +58,7 @@ const routes : Routes = [
   {path :'members', component:MembersComponent},
   {path :'activity', component:ActivityComponent},
   {path :'gallery', component:GalleryComponent},
-  {path :'notice-board', component:NoticeBoardComponent ,
+  {path :'about', component:NoticeBoardComponent ,
     children: [                          //<---- child components declared here
             {
                 path:'suggestion',

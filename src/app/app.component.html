@@ -1,10 +1,157 @@
-<div style="margin:0 1%;">
+<div class="party">
+  <div style="    width: 100%;
+    height: 25px;
+    background: #d45e07;">
+  </div>
+  <div style="    width: 100%;
+    height: 25px;
+    background: white; line-height: 25px;text-align: center;">
+    <span  style="    font-family: monospace;">एकता पार्टी ! Ekta Party !اتحاد پارٹی</span>
+  </div>
+  <div style="    width: 100%;
+    height: 25px;
+    background: green;">
+  </div>
+</div>
+
+<div>
+  <nav > <!-- *ngIf="mobile" -->
+   <span class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']">
+
+    <i class="fas fa-home" style="background: #3b5998;
+     color: white !important;
+    text-align: center !important;
+     width: 23.5% !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;">
+    <div style="text-align: center;font-size: 19px;">Home</div>
+     
+    </i> 
+
+  </span>
+    <!-- default
+    style="    background: #3b5998;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 23% !important;
+    height: 95px !important; /*50px*/
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;" -->
+
+  <!-- element.style {
+    background: #3b5998;
+    /* margin-top: 15px; */
+    color: white !important;
+    text-align: center !important;
+    /* line-height: 1px !important; */
+    width: 23% !important;
+    /* height: 95px !important; */
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+}
+ -->
+  <span class="link" [routerLink]="['/about']" [routerLinkActive]="['active-link']">
+   <!--  <i class="fas fa-flag-checkered" style="    background: #3b5998;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 23% !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;"></i>    -->
+
+     <i class="fas fa-info-circle" style="background: #3b5998;
+     color: white !important;
+    text-align: center !important;
+     width: 23.5% !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;">
+    <div style="text-align: center;font-size: 19px;">About</div>
+     
+    </i>          
+  </span>
+  <span class="link" [routerLink]="['/activity']" [routerLinkActive]="['active-link']">
+   <!--  <i class="fa fa-balance-scale" style="    background: #3b5998;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 23% !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;margin: 0;
+    padding: 0;
+    margin-right: 0;"></i>      -->       
+     <i class="fas fa-users" style="background: #3b5998;
+     color: white !important;
+    text-align: center !important;
+     width: 23.5% !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;">
+    <div style="text-align: center;font-size: 19px;">Contact</div>
+     
+    </i> 
+  </span>
+  <span class="link" [routerLink]="['/gallery']" [routerLinkActive]="['active-link']">
+    <!-- <i class="fa fa-camera" style="    background: #3b5998;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 23% !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;margin: 0;
+    padding: 0;
+    margin-right: 0;"></i> -->    
+     <i class="fas fa-flag-checkered" style="background: #3b5998;
+     color: white !important;
+    text-align: center !important;
+     width: 23.5% !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;">
+    <div style="text-align: center;font-size: 19px;">Activity</div>
+     
+    </i> 
+  </span>
+  <!-- <span class="link" [routerLink]="['/members']" [routerLinkActive]="['active-link']">
+    <i class="fa fa-users"></i>            
+  </span> -->
+</nav>  
+  </div>
+
+<!-- <div style="margin:0 1%;">
   <section class="header-section">
     <img class="logo top-header" src="../assets/logo-icon.jpg">
-    <h1 class="logo-heading top-header">Janta Ekta Party</h1>
+    <h1 class="logo-heading top-header">Ekta Party</h1>
+
     
-    <a href="https://www.facebook.com/jantaektapary" class="top-header facebook">
-      <i class="fab fa-facebook-f social-media"></i>
+    <!-- <a href="https://www.facebook.com/jantaektapary" class="top-header facebook">
+      <i class="fab fa-facebook-f fb-social"></i>
     </a>
     <a href="https://www.facebook.com/jantaektapary" class="top-header twitter">
       <i class="fab fa-twitter social-media"></i>
@@ -14,10 +161,11 @@
     </a>
     <a href="https://www.facebook.com/jantaektapary" class="top-header gmail">
       <i class="fas fa-envelope-square social-media"></i>
-    </a>    
-  </section>
+    </a> -->    
+  <!--</section>-->
 
-  <!-- Nav links -->
+
+ <!--
   <nav *ngIf="mobile">
    <span class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']">
     <i class="fas fa-home"></i>            
@@ -42,10 +190,25 @@
       {{link.name}}
     </li>
   </ul>
-
-  <div class="align router-outlet">
+  <div class="social-container">
+  <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
+      <i class="fab fa-facebook-f fb-social"></i>
+    </a>
+    <a href="https://www.facebook.com/jantaektapary" class="top-header twitter">
+      <i class="fab fa-twitter twitter-social"></i>
+    </a>
+    <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
+      <i class="fab fa-youtube youtube-social"></i>
+      
+      <!-- fab fa-youtube --><!--
+    </a>
+    <a href="https://www.facebook.com/jantaektapary" class="top-header gmail">
+      <i class="fas fa-envelope-square social-media"></i>
+    </a> 
+  </div> -->
+   <div class="align router-outlet">
     <router-outlet></router-outlet>
-  </div>
+  </div> 
    <!--  <div class="align notice-board" [routerLink]="['/notice-board']">
       <h4 class="notice">Notice board</h4>
       
@@ -65,9 +228,9 @@
         </div>
       </div>
     </div> -->
-  </div>
+  <!-- </div>
   <div class="footer">
     <p>Footer</p>
   </div>
 
-</div>
+</div> -->
