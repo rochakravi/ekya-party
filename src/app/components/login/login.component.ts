@@ -13,6 +13,8 @@ import {ApiService} from '../../services/api.service' ;
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  login : Boolean = false ;
+  register : Boolean = false ;
 
   constructor(private socialAuthService: AuthService, private api : ApiService, private router : Router ) { }
   
@@ -20,6 +22,8 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   public socialSignIn(socialPlatform : string) {
+     this.register = false ;
+    this.login = false ;
     let socialPlatformProvider;
     if(socialPlatform == "facebook"){
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
@@ -36,6 +40,14 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/home'])
         
       });
+  }
+  loginMethod(){
+    this.register = false ;
+    this.login = true ;
+  }
+  registerMethod(){
+    this.login = false ;
+    this.register = true ;
   }
 
 }

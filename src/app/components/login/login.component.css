@@ -1,0 +1,15 @@
+.auth-btn{
+	padding: 10px 30px;
+    background: skyblue;
+    color: white;
+    font-size: 22px;
+}
+.social-btn{
+	padding: 5px 10px;
+    background: blue;
+    color: white;
+    font-size: 21px;
+}
+.user-info{
+	text-align: center;
+}

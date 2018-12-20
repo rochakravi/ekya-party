@@ -17,3 +17,42 @@ width:100%;
 text-align: center;
 }*/
 
+.game-section{
+	background: #e8e1e1;
+    color: black;
+}
+.fixture-model{
+	background-image: none;
+	padding:0 ;
+	margin: 0;
+}
+.fixture{
+	list-style: none ;
+	display: block ;
+	width : 100%;
+	font-size: 15px;
+	font-weight: bold;
+	padding:0 ;
+	margin: 0;
+}
+.details{
+	color:red ;
+	font-size: 12px ;
+}
+.semi-final{
+	background: #e4cb9c;
+    margin-bottom: 5px ; 
+}
+.final{
+	    background: #e4aaaa;
+}
+.group{
+	border: 1px solid skyblue;
+	    margin: 10px 0;
+    text-align: left;
+}
+
+
+
+
+
