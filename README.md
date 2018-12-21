@@ -28,9 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ----firebase-----
 ng build --prod
 
-firebase deploy --project 'project-id'
+firebase deploy --project  jantaekta-party-dev ==>'project-id' =>
+
 
 ------git------
 git add .
 git commit -m "comment"
-git push origin branc-name
+git push origin staging-two-dev ==>   branc-name ==> 
