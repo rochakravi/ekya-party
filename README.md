@@ -29,3 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng build --prod
 
 firebase deploy --project 'project-id'
+
+------git------
+git add .
+git commit -m "comment"
+git push origin branc-name

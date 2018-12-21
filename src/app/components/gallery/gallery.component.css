@@ -18,8 +18,8 @@ text-align: center;
 }*/
 
 .game-section{
-	background: #e8e1e1;
-    color: black;
+	    background: black;
+    color: wheat;
 }
 .fixture-model{
 	background-image: none;
@@ -51,8 +51,22 @@ text-align: center;
 	    margin: 10px 0;
     text-align: left;
 }
-
-
+.semi-one{
+	font-size: 20px;
+    color: blue;
+}
+.semi-two{
+	font-size: 20px;
+    color: green;
+}
+.main-sec{
+	margin-bottom: 5px;
+}
+.group-sec{
+	background: green;
+    color: white;
+    text-align: center;
+}
 
 
 
