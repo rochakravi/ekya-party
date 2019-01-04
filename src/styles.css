@@ -7,6 +7,14 @@ app-gallery{
 }
 footer{
     background-color: pink;
+    margin-top: 20px;
+    position: fixed;
+    position: fixed;
+    /* top: 40%; */
+    left: 0px;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
 }
 
 
