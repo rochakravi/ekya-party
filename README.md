@@ -30,7 +30,12 @@ ng build --prod
 
 firebase deploy --project  jantaekta-party-dev ==>'project-id' =>
 
+---email----
+manvi.asmita => jantaekta-party
+                jantaekta-party-dev
+                ekta-partyy
 
+janardhan.indianjanta@gmail.com  => ekta-party                
 ------git------
 git add .
 git commit -m "comment"

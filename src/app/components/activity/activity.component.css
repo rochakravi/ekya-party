@@ -1,27 +1,72 @@
-html,
-body {  margin: 0;
-  padding: 0;
-  height: 100%;
+/*app-gallery{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
 }
-#wrapper {
-  min-height: 100%;
-  position: relative;
+footer{
+	background-color: pink;
 }
-#header {
-  background: #ededed;
-  padding: 10px;
+*/
+/*footer{
+position:fixed;
+bottom:0px;
+background-color:pink;
+width:100%;
+text-align: center;
+}*/
+
+.game-section{
+  background: black;
+color: wheat;
 }
-#content {
-  padding-bottom: 100px;
-  /* Height of the footer element */
-  color : red;
-  
+.fixture-model{
+background-image: none;
+padding:0 ;
+margin: 0;
 }
-#footer {
-  background: #ffab62;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.fixture{
+list-style: none ;
+display: block ;
+width : 100%;
+font-size: 15px;
+font-weight: bold;
+padding:0 ;
+margin: 0;
 }
+.details{
+color:red ;
+font-size: 12px ;
+}
+.semi-final{
+background: #e4cb9c;
+margin-bottom: 5px ; 
+}
+.final{
+  background: #e4aaaa;
+}
+.group{
+border: 1px solid skyblue;
+  margin: 10px 0;
+text-align: left;
+}
+.semi-one{
+font-size: 20px;
+color: blue;
+}
+.semi-two{
+font-size: 20px;
+color: green;
+}
+.main-sec{
+margin-bottom: 5px;
+}
+.group-sec{
+background: green;
+color: white;
+text-align: center;
+}
+
+
+

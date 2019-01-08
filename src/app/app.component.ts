@@ -35,7 +35,7 @@ export class AppComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event?) {
     this.screenHeight = window.innerHeight;
-    alert(this.screenHeight);
+    //alert(this.screenHeight);
     this.deviceHeight=this.screenHeight-94 ;
     this.screenWidth = window.innerWidth;
 }

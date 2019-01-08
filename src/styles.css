@@ -6,7 +6,7 @@ app-gallery{
 
 }
 footer{
-    background-color: pink;
+    background-color: black;
     margin-top: 20px;
     position: fixed;
     position: fixed;
@@ -15,6 +15,7 @@ footer{
     z-index: 99999;
     width: 100%;
     text-align: center;
+    color : #a3d806
 }
 
 
