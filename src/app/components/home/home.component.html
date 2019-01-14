@@ -1,159 +1,61 @@
-<div style="    text-align: center;
-    background: green;
-    color: white;
-    border-radius: 0 0 12px 12px;
-    margin: 0 32%;" (click)="showIdeology()" >
-	Show Ideology
-</div>
+<div>
+	<div class="p-2 d-flex bg-success text-white ">
+		<h5>Party Agenda</h5>
 
-<div id="myModal" class="modal" *ngIf="dontShow">
+	</div>
+	<div class="p-2 d-flex bg-info sub-box" >
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close" (click)="closeIdeology()">&times;</span>
-    <section style="margin-top: 19%;">
-	<article>
-		<h4 class="home-section points-eng">Steps towards Huminity with Unity
-			<div class="points-hin" style="text-align:center;font-family: bold">हमारे बीच एकता</div>
-		</h4>		
-		<details class="details">
-			<summary>हमारे बीच एकता</summary>
-			<h6 class="points-eng">Unity among us</h6>
-    		<h6 class="points-hin">हमारे बीच एकता</h6>			
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity
-			<div style="text-align:center;font-family: bold">भारतीय व्यापार को बढ़ावा देना</div>
-		</h4>
-		<!-- <h4 class="home-section">Steps towards Huminity with Unity</h4> -->
-		<details class="details">
-			<summary>भारतीय व्यापार को बढ़ावा देना</summary>
-			
-			 <h6 class="points-eng">boost to Indian business</h6>
-    <h6 class="points-hin">भारतीय व्यापार को बढ़ावा देना</h6>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity
-			<div style="text-align:center;font-family: bold">कौशल विकास</div>
-		</h4>
-		<!-- <h4 class="home-section">Steps towards Huminity with Unity</h4> -->
-		<details class="details">
-			<summary>कौशल विकास</summary>
-			
-			<h6 class="points-eng">Skill Development</h6>
-    		<h6 class="points-hin">कौशल विकास</h6>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-</section>
-
-  </div>
-
-</div> 
-
-<section *ngIf="dontShow">
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>हमारे बीच एकता</summary>
-			<h6 class="points-eng">Unity among us</h6>
-    		<h6 class="points-hin">हमारे बीच एकता</h6>
-			<p class="points-eng">All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p class="points-hin"> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-</section>
-
-
+		<h6 class="flex-info text-white">
+			<marquee>About to Come soon !</marquee>
+		</h6>
+	</div>
 
 	<div>
-		<h4 class="home-section align-suggestion" style="width:49%">Janta Suggestions </h4>
-		<button class="align-suggestion post-suggestion" (click)="postSuggestion()"	style="width:49%">Post Your Suggestions</button>
-	</div>
+		<h5 class="p-2 d-flex bg-success text-white">Active Events</h5>
+		<div class="d-flex p-2 bg-info sub-box" (click)="partyAgendaa()" >
+			<h6 class="flex-fill text-white ">Collection of Party Agenda</h6>
+			<h6 class="flex-fill text-white text-right pr-5 ">Active</h6>
 
-	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
-		<div style="background: lightblue;">						
-			<img [src]="[suggestion.social_pic]" style="width : 11%;border-radius: 50%;">
-			<span style="font-size: 11px;font-weight: bold;">{{suggestion.social_name}}</span>
-			
+			<!-- <div class="dropdown-toggle"></div> -->
 		</div>
-		<div style="width:100%">			
-			<div style="font-size: 11px;color: black;font-family: unset;">{{suggestion.suggsestion_description}}</div>
-		</div>		
-		<div style="border-bottom: 1px solid grey;border-top: 1px solid grey;height: 20px;margin-bottom: 1%;">
-		
+		<div *ngFor="let meet of meeting">
+			<div class="p-2 d-flex" *ngIf="PartyAgenda">
+				<h6 class="p-2 flex-fill">
+					<p class="text-primary font-weight-bold"> Invitee </p> 
+					<span class="color: #d45e07;
+					font-size: 15px;">{{meet.invitee}} </span>
+					<p class="text-primary font-weight-bold" style="margin-top:4%">
+						<a href="tel:{{meet.inviteePhone}}" data-rel="external">
+							<button class="btn btn-primary"> Call <i class="fa fa-phone" ></i></button>							
+						</a>						
+					</p>
+				</h6>
+				<h6 class="p-2 flex-fill">
+					<p class="text-primary font-weight-bold"> Attendee </p> {{meet.attendee}}
+					<p class="text-primary font-weight-bold">
+
+						<a href="tel:{{meet.attendeePhone}}" data-rel="external">{{meet.attendeePhone}}</a>
+					</p>
+
+
+				</h6>
+				<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Summery</button>
+			</div>
+			<div id="demo" class="collapse p-3 text-success">
+				{{meet.summery}}
+			</div>
+		</div>
+		<div class="d-flex p-2 text-small bg-info sub-box" >
+			<h6 class="flex-fill text-white">Collection of Documents - Party Members</h6>
+			<h6 class="flex-fill text-right">Upcoming</h6>
+		</div>
+		<div class="d-flex p-2 bg-info sub-box">
+			<h6 class="flex-fill text-white">Selection of Party Persons</h6>
+			<h6 class="flex-fill  text-right">Upcoming</h6>
+		</div>
+		<div class="d-flex p-2 bg-info sub-box">
+			<h6 class="flex-fill text-white">Registration of Party</h6>
+			<h6 class="flex-fill  text-right">Upcoming</h6>
 		</div>
 	</div>
-		
-		
-		
-<!-- social links-->
-<div class="social-container">
-  <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
-      <i class="fab fa-facebook-f fb-social"></i>
-    </a>
-    <a href="https://twitter.com/ekta_party" class="top-header twitter">
-      <i class="fab fa-twitter twitter-social"></i>
-    </a>
-    <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
-      <i class="fab fa-youtube youtube-social"></i>
-      
-      <!-- fab fa-youtube -->
-    </a>
-    <!-- <a href="https://www.facebook.com/jantaektapary" class="top-header gmail">
-      <i class="fas fa-envelope-square social-media"></i>
-    </a>  -->
-  </div> 
-
-
-
-<!-- <div>
-	
-	 <app-gallery></app-gallery>
-</div> -->
- 
+</div>

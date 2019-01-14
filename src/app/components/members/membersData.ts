@@ -50,6 +50,14 @@ export const MembersData: Members[]  = [
       "current": "Bengal"
     },
     {
+      "name": "Bittu Singh",
+      "title": "Activist",
+      "pic": "",
+      "phone": 7004131348,
+      "place": "Bhakurahiya",
+      "current": "Muzaffarpur"
+    },
+    {
       "name": "Rohan",
       "title": "Promoter",
       "pic": "",

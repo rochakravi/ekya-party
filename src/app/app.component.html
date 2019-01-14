@@ -1,5 +1,5 @@
 <div class="party">
-  <div style="background: #d45e07;">  </div>
+  <div style="background: #d45e07;"> </div>
   <div style="background: white; line-height: 25px;text-align: center;">
     <span style="font-family: monospace;">एकता पार्टी ! Ekta Party !اتحاد پارٹی</span>
   </div>
@@ -10,71 +10,70 @@
   <div class="p-1 bg-info flex-fill text-align " [routerLink]="['/home']" [routerLinkActive]="['active-link']">
     <!-- <span class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']"> -->
 
-      <i class="fas fa-home nav-logo">
-        <div style="text-align: center;font-size: 19px;">Home</div>
-      </i>
+    <i class="fas fa-home nav-logo">
+      <div style="text-align: center;font-size: 19px;">Home</div>
+    </i>
     <!-- </span> -->
   </div>
   <div class="p-1 bg-info flex-fill text-align" [routerLink]="['/activity']" [routerLinkActive]="['active-link']">
-    
-      <i class="fas fa-info-circle nav-logo">
-        <div style="text-align: center;font-size: 19px;">Activity</div>
-      </i>
-    
+
+    <i class="fas fa-info-circle nav-logo">
+      <div style="text-align: center;font-size: 19px;">Activity</div>
+    </i>
+
   </div>
   <div class="p-1 bg-info flex-fill text-align " [routerLink]="['/gallery']" [routerLinkActive]="['active-link']">
-    
-      <i class="fas fa-users nav-logo">
-        <div style="text-align: center;font-size: 19px;">Gallery</div>
-      </i>
-    
+
+    <i class="fas fa-users nav-logo">
+      <div style="text-align: center;font-size: 19px;">Gallery</div>
+    </i>
+
   </div>
   <div class="p-1 bg-info flex-fill text-align" [routerLink]="['/members']" [routerLinkActive]="['active-link']">
-    
-      <i class="fas fa-flag-checkered nav-logo">
-        <div style="text-align: center;font-size: 19px;">Contact</div>
-      </i>
-  
+
+    <i class="fas fa-flag-checkered nav-logo">
+      <div style="text-align: center;font-size: 19px;">Contact</div>
+    </i>
+
   </div>
 </div>
 
-<div class="align router-outlet">
+<div class="align router-outlet" style="margin-bottom: 28%;">
   <router-outlet></router-outlet>
 </div>
 <footer style="margin-top: 20px;" [style.top.px]="deviceHeight">
-    <!-- <md-toolbar class="md-hue-2 md-scroll-shrink">
-      <div layout="row" layout-align="center center" flex> -->
-        <div class="d-flex bg-secondary text-white" >
-
-            <div class="p-1 bg-info flex-fill text-align" >
-                
-              </div>
-        <div class="p-1 bg-info flex-fill text-align" >
-        <p>We will solve our problems by our own !</p>
-        <p>अपनी समस्या हम स्वयं खत्म करेंगे !!</p>
-      </div>
-      <div class="p-1 bg-info flex-fill text-align" >
-          <!-- social links-->
-<div class="">
-		<a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
-			<i class="fab fa-facebook-f fb-social"></i>
-		  </a>
-		  <a href="https://twitter.com/ekta_party" class="top-header twitter">
-			<i class="fab fa-twitter twitter-social"></i>
-		  </a>
-		  <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
-			<i class="fab fa-youtube youtube-social"></i>
-			
-			<!-- fab fa-youtube -->
-		  </a>
-		  <!-- <a href="https://www.facebook.com/jantaektapary" class="top-header gmail">
-			<i class="fas fa-envelope-square social-media"></i>
-		  </a>  -->
-		</div> 
-	  
-
+    <div class="p-1 d-flex  bg-light">      
+        <div class="" style="width: 100%;">
+          <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
+            <i class="fab fa-facebook-f fb-social"></i>
+          </a>
+          <a href="https://twitter.com/ekta_party" class="top-header twitter">
+            <i class="fab fa-twitter twitter-social"></i>
+          </a>
+          <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
+            <i class="fab fa-youtube youtube-social"></i>
+          </a>
         </div>
+      </div>
+  
+  <div class="d-flex bg-secondary text-white">    
+    <div class="p-1 bg-info flex-fill text-align">
+      <p>We will solve our problems by our own !</p>
+      <p>अपनी समस्या हम स्वयं खत्म करेंगे !!</p>
     </div>
-    <!--   </div>
-    </md-toolbar> -->
-  </footer>
+    <!-- <div class="p-1 bg-info flex-fill text-align">
+      
+      <div class="">
+        <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
+          <i class="fab fa-facebook-f fb-social"></i>
+        </a>
+        <a href="https://twitter.com/ekta_party" class="top-header twitter">
+          <i class="fab fa-twitter twitter-social"></i>
+        </a>
+        <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
+          <i class="fab fa-youtube youtube-social"></i>
+        </a>
+      </div>
+    </div> -->
+  </div>
+</footer>

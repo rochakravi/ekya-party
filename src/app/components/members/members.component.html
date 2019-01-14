@@ -6,7 +6,10 @@
     </div>
     <div class="p-1 flex-fill text-align ">
       <h5> {{ hero.name }}</h5>
-      <h6>{{ hero.phone }}</h6>
+      <a href="tel:{{ hero.phone }}" data-rel="external">
+          <button class="btn btn-primary"> Call <i class="fa fa-phone" ></i></button>
+          
+        </a>
       <h6><span style="color:red"> Origin - </span><strong>{{ hero.place }}</strong></h6>
       <h6><span style="color:green"> Current - </span> <strong>{{ hero.current }}</strong></h6>
       <h6>social links</h6>
