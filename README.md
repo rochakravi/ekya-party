@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+----firebase-----
+ng build --prod
+
+firebase deploy --project  jantaekta-party-dev ==>'project-id' =>
+
+---email----
+manvi.asmita => jantaekta-party
+                jantaekta-party-dev
+                ekta-partyy
+
+janardhan.indianjanta@gmail.com  => ekta-party                
+------git------
+git add .
+git commit -m "comment"
+git push origin staging-two-dev ==>   branc-name ==> 

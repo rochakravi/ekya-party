@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
 import { HostListener } from "@angular/core";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  host: {
+    // '(document:keydown)': 'handleKeyboardEvent($event)',
+    '(window:resize)': 'onResize()'
+  }
+
 })
 export class AppComponent {
   title = 'app';
@@ -15,6 +21,7 @@ export class AppComponent {
   ]
   screenHeight ;
   screenWidth ;
+  deviceHeight ;
   mobile : boolean = false ;
 
   constructor(){   
@@ -28,6 +35,8 @@ export class AppComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event?) {
     this.screenHeight = window.innerHeight;
+    //alert(this.screenHeight);
+    this.deviceHeight=this.screenHeight-162 ;
     this.screenWidth = window.innerWidth;
 }
 }

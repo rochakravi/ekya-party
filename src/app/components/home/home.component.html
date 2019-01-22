@@ -1,72 +1,61 @@
-<section>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-	<article>
-		<h4 class="home-section">Steps towards Huminity with Unity</h4>
-		<details class="details">
-			<summary>Copyright 1999-2018.</summary>
-			
-			<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-			<p> - by Refsnes Data. All Rights Reserved.</p>
-		</details>
-		
-	</article>
-</section>
-
 <div>
-	<h4 class="home-section align-suggestion"
-	style="width:49%">Janta Suggestions </h4>
-	<button class="align-suggestion post-suggestion" (click)="postSuggestion()"
-	style="width:49%">Post Your Suggestions</button>	
-	<div *ngFor="let suggestion of suggestions" class="suggestion-container">
-		<div class="comment" style="width:19%;padding-bottom: 2%;    margin-top: 0;">
-			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				Name
-			</h6>
-			<img src="../assets/pranav.jpg" style="width : 80%;border-radius: 50%;" >
-		</div>
-		<div class="comment"  style="width:60%">
-			<h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-				{{suggestion.suggsestion_subject}}
-			</h6>
-			<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div>
-		</div>
-		<!-- <h6 style="font-size: 12px;font-weight: bold;color: #e86718;">
-			{{suggestion.suggsestion_subject}}
+	<div class="p-2 d-flex bg-success text-white ">
+		<h5>Party Agenda</h5>
+
+	</div>
+	<div class="p-2 d-flex bg-info sub-box" >
+
+		<h6 class="flex-info text-white">
+			<marquee>About to Come soon !</marquee>
 		</h6>
-		<div style="font-size: 12px;color: green;">{{suggestion.suggsestion_description}}</div> -->
-		<div style="font-size: 6px;padding-left: 25%;margin-bottom: 1%">
-			<button style="margin-right: 20%">Like</button>
-			<button style="">Share</button>
+	</div>
+
+	<div>
+		<h5 class="p-2 d-flex bg-success text-white">Active Events</h5>
+		<div class="d-flex p-2 bg-info sub-box" (click)="partyAgendaa()" >
+			<h6 class="flex-fill text-white ">Collection of Party Agenda</h6>
+			<h6 class="flex-fill text-white text-right pr-5 ">Active</h6>
+
+			<!-- <div class="dropdown-toggle"></div> -->
 		</div>
-		<div style="background: lightgreen;height: 1px;"></div>
+		<div *ngFor="let meet of meeting">
+			<div class="p-2 d-flex" *ngIf="PartyAgenda">
+				<h6 class="p-2 flex-fill">
+					<p class="text-primary font-weight-bold"> Invitee </p> 
+					<span class="color: #d45e07;
+					font-size: 15px;">{{meet.invitee}} </span>
+					<p class="text-primary font-weight-bold" style="margin-top:4%">
+						<a href="tel:{{meet.inviteePhone}}" data-rel="external">
+							<button class="btn btn-primary"> Call <i class="fa fa-phone" ></i></button>							
+						</a>						
+					</p>
+				</h6>
+				<h6 class="p-2 flex-fill">
+					<p class="text-primary font-weight-bold"> Attendee </p> {{meet.attendee}}
+					<p class="text-primary font-weight-bold">
+
+						<a href="tel:{{meet.attendeePhone}}" data-rel="external">{{meet.attendeePhone}}</a>
+					</p>
+
+
+				</h6>
+				<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Summery</button>
+			</div>
+			<div id="demo" class="collapse p-3 text-success">
+				{{meet.summery}}
+			</div>
+		</div>
+		<div class="d-flex p-2 text-small bg-info sub-box" >
+			<h6 class="flex-fill text-white">Collection of Documents - Party Members</h6>
+			<h6 class="flex-fill text-right">Upcoming</h6>
+		</div>
+		<div class="d-flex p-2 bg-info sub-box">
+			<h6 class="flex-fill text-white">Selection of Party Persons</h6>
+			<h6 class="flex-fill  text-right">Upcoming</h6>
+		</div>
+		<div class="d-flex p-2 bg-info sub-box">
+			<h6 class="flex-fill text-white">Registration of Party</h6>
+			<h6 class="flex-fill  text-right">Upcoming</h6>
+		</div>
 	</div>
 </div>

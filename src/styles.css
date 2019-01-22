@@ -1,3 +1,34 @@
+app-gallery{
+    position: absolute;
+    /*bottom: 0;*/
+    width: 100%;
+    text-align: center;
+
+}
+footer{
+    background-color: black;
+    margin-top: 20px;
+    position: fixed;
+    position: fixed;
+    /* top: 40%; */
+    left: 0px;
+    z-index: 99999;
+    width: 100%;
+    text-align: center;
+    color : #a3d806
+}
+
+
+
+
+.header-section{
+    margin-top : 0;
+}
+
+
+
+
+
 /* You can add global styles to this file, and also import other style files */
 ul li.link{
     list-style: none;
@@ -20,6 +51,15 @@ ul{
     color: #352a1c;
    /* padding: 0 13px;*/
 }
+
+.points-eng{
+      color: #f35a0e;
+    font-weight: bold;
+}
+.points-hin{
+   color: green;
+    font-weight: bold;
+}
 /*.social-media{
     position: absolute;
     top: 2%;
@@ -30,19 +70,20 @@ ul{
 /*li:hover{
     background: rgb(83, 16, 241) ;
 }*/
-.active-link{
+/*.active-link{
     background : green ;
-}
+}*/
 
 
 .board-links div{
     text-align: center ;
 }
-.home-section{
+/*.home-section{
     background: #9494ea;
     color: black;
     font-family: cursive;
-}
+    padding: 5px 10px;
+}*/
 details{
     margin: 0 9%;
     border: none;
@@ -54,6 +95,7 @@ details{
     font-family: cursive;
     font-size: 13px ;
     padding: 0 0 0 1%;
+    padding: 5px 10px;
 }
 summary{
     outline:none;
@@ -71,6 +113,93 @@ summary{
 
 
 
+/* socila Link css */
+.fb-social{
+    background: #3b5998;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 48px !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 50% !important;
+}
+
+.twitter-social{
+    background: #00aced;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 48px !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 50% !important;
+    -moz-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+    -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+.youtube-social {
+    background: #bb0000;
+    margin-top: 2px;
+    color: white !important;
+    text-align: center !important;
+    line-height: 51px !important;
+    width: 48px !important;
+    height: 50px !important;
+    font-size: 2em !important;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 50% !important;
+    -moz-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+    -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.social-container{
+    position: fixed;
+    top: 40%;
+    left: 0px;
+    z-index: 99999; 
+    width:5%;
+      
+}
 
 
-
+/*media query*/
+/*@media only screen and (min-width: 280px) {
+    .social-container{
+      
+        top: 36%;
+    }
+}
+@media only screen and (min-width: 360px) {
+    .social-container{
+        width:15%;
+    }
+}
+@media only screen and (min-width: 400px) {
+    .social-container{
+        width:14%;
+    }
+}
+@media only screen and (min-width: 520px) {
+    .social-container{
+        width:12%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .social-container{
+        width:8%;
+        top:40%;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .social-container{
+        width:5%;
+        top:50%;
+    }
+}
+*/

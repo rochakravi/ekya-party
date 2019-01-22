@@ -1,23 +1,23 @@
-<h1>Login Using</h1>
- 
- <form action="/connect/google" method="POST" style="display: inline">
- <input type="hidden" name="scope" value="profile email" />
- <button type="submit" class="btn btn-danger">
- Google <span class="fa fa-google-plus"></span>
- </button>
- </form>
- 
- <form action="/connect/facebook" method="POST" style="display: inline">
- <input type="hidden" name="scope" value="public_profile,email" />
- <button type="submit" class="btn btn-primary">
- Facebook <span class="fa fa-facebook"></span>
- </button>
- </form>
- 
- <form action="/connect/linkedin" method="POST" style="display: inline">
- <input type="hidden" name="scope"
- value="r_basicprofile,r_emailaddress" />
- <button type="submit" class="btn btn-primary">
- LinkedIn <span class="fa fa-linkedin"></span>
- </button>
- </form>
+<div style="margin: 0 3%; padding-bottom: 10%;">
+    
+  <div *ngFor="let hero of membersData" class="d-flex p-1 m-14">
+    <div class="p-1 flex-fill text-align ">
+      <img class="member-pic" src={{hero.pic}} />
+    </div>
+    <div class="p-1 flex-fill text-align ">
+      <h5> {{ hero.name }}</h5>
+      <a href="tel:{{ hero.phone }}" data-rel="external">
+          <button class="btn btn-primary"> Call <i class="fa fa-phone" ></i></button>
+          
+        </a>
+      <h6><span style="color:red"> Origin - </span><strong>{{ hero.place }}</strong></h6>
+      <h6><span style="color:green"> Current - </span> <strong>{{ hero.current }}</strong></h6>
+      <h6>social links</h6>
+    </div>
+    <div class="p-1 flex-fill text-align ">
+      <h4 class="role">{{ hero.title }}</h4>
+
+    </div>
+
+  </div>
+</div>

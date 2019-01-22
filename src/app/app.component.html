@@ -1,73 +1,79 @@
-<div style="margin:0 1%;">
-  <section class="header-section">
-    <img class="logo top-header" src="../assets/logo-icon.jpg">
-    <h1 class="logo-heading top-header">Janta Ekta Party</h1>
-    
-    <a href="https://www.facebook.com/jantaektapary" class="top-header facebook">
-      <i class="fab fa-facebook-f social-media"></i>
-    </a>
-    <a href="https://www.facebook.com/jantaektapary" class="top-header twitter">
-      <i class="fab fa-twitter social-media"></i>
-    </a>
-    <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
-      <i class="fab fa-youtube social-media"></i>
-    </a>
-    <a href="https://www.facebook.com/jantaektapary" class="top-header gmail">
-      <i class="fas fa-envelope-square social-media"></i>
-    </a>    
-  </section>
-
-  <!-- Nav links -->
-  <nav *ngIf="mobile">
-   <span class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']">
-    <i class="fas fa-home"></i>            
-  </span>
-
-  <span class="link" [routerLink]="['/notice-board']" [routerLinkActive]="['active-link']">
-    <i class="fas fa-flag-checkered"></i>            
-  </span>
-  <span class="link" [routerLink]="['/activity']" [routerLinkActive]="['active-link']">
-    <i class="fa fa-balance-scale"></i>            
-  </span>
-  <span class="link" [routerLink]="['/gallery']" [routerLinkActive]="['active-link']">
-    <i class="fa fa-camera"></i>    
-  </span>
-  <span class="link" [routerLink]="['/members']" [routerLinkActive]="['active-link']">
-    <i class="fa fa-users"></i>            
-  </span>
-</nav>  
-<div>
-  <ul *ngIf="!mobile">
-    <li *ngFor="let link of navLinks" class="link" [routerLink]="[link.path]" [routerLinkActive]="['active-link']">
-      {{link.name}}
-    </li>
-  </ul>
-
-  <div class="align router-outlet">
-    <router-outlet></router-outlet>
+<div class="party">
+  <div style="background: #d45e07;"> </div>
+  <div style="background: white; line-height: 25px;text-align: center;">
+    <span style="font-family: monospace;">एकता पार्टी ! Ekta Party !اتحاد پارٹی</span>
   </div>
-   <!--  <div class="align notice-board" [routerLink]="['/notice-board']">
-      <h4 class="notice">Notice board</h4>
-      
-      <div class="board-links">
-        <div style="    text-align: center;
-        padding: 5%;">
-          Leaders of the Week
+  <div style="background: green;"></div>
+</div>
+<!-- <img src="assets/logo-large.jpg" /> -->
+<div class="d-flex p-1 bg-secondary text-white ">
+  <div class="p-1 bg-info flex-fill text-align " [routerLink]="['/home']" [routerLinkActive]="['active-link']">
+    <!-- <span class="link" [routerLink]="['/home']" [routerLinkActive]="['active-link']"> -->
 
+    <i class="fas fa-home nav-logo">
+      <div style="text-align: center;font-size: 19px;">Home</div>
+    </i>
+    <!-- </span> -->
+  </div>
+  <div class="p-1 bg-info flex-fill text-align" [routerLink]="['/activity']" [routerLinkActive]="['active-link']">
+
+    <i class="fas fa-info-circle nav-logo">
+      <div style="text-align: center;font-size: 19px;">Activity</div>
+    </i>
+
+  </div>
+  <div class="p-1 bg-info flex-fill text-align " [routerLink]="['/gallery']" [routerLinkActive]="['active-link']">
+
+    <i class="fas fa-users nav-logo">
+      <div style="text-align: center;font-size: 19px;">Gallery</div>
+    </i>
+
+  </div>
+  <div class="p-1 bg-info flex-fill text-align" [routerLink]="['/members']" [routerLinkActive]="['active-link']">
+
+    <i class="fas fa-flag-checkered nav-logo">
+      <div style="text-align: center;font-size: 19px;">Contact</div>
+    </i>
+
+  </div>
+</div>
+
+<div class="align router-outlet" style="margin-bottom: 28%;">
+  <router-outlet></router-outlet>
+</div>
+<footer style="margin-top: 20px;" [style.top.px]="deviceHeight">
+    <div class="p-1 d-flex  bg-light">      
+        <div class="" style="width: 100%;">
+          <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
+            <i class="fab fa-facebook-f fb-social"></i>
+          </a>
+          <a href="https://twitter.com/ekta_party" class="top-header twitter">
+            <i class="fab fa-twitter twitter-social"></i>
+          </a>
+          <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
+            <i class="fab fa-youtube youtube-social"></i>
+          </a>
         </div>
-        <div style="    text-align: center;
-        padding: 5%;">
-          Activity
-        </div>
-        <div style="    text-align: center;
-        padding: 5%;">
-          Upcoming to do List
-        </div>
+      </div>
+  
+  <div class="d-flex bg-secondary text-white">    
+    <div class="p-1 bg-info flex-fill text-align">
+      <p>We will solve our problems by our own !</p>
+      <p>अपनी समस्या हम स्वयं खत्म करेंगे !!</p>
+    </div>
+    <!-- <div class="p-1 bg-info flex-fill text-align">
+      
+      <div class="">
+        <a href="https://www.facebook.com/ektapartyy" class="top-header facebook">
+          <i class="fab fa-facebook-f fb-social"></i>
+        </a>
+        <a href="https://twitter.com/ekta_party" class="top-header twitter">
+          <i class="fab fa-twitter twitter-social"></i>
+        </a>
+        <a href="https://www.facebook.com/jantaektapary" class="top-header youtube">
+          <i class="fab fa-youtube youtube-social"></i>
+        </a>
       </div>
     </div> -->
   </div>
-  <div class="footer">
-    <p>Footer</p>
-  </div>
-
-</div>
+</footer>

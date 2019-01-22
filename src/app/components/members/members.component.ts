@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
+import { MembersData } from './membersData';
 
 @Component({
   selector: 'app-members',
@@ -6,15 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./members.component.css']
 })
 export class MembersComponent implements OnInit {
-	// leadersOfWeek =[
- //    {name:"Imran",title:"Activist",image:"../assets/pranav.jpg",organisation:"",gmail:"",facebook:"https://www.facebook.com/pranav.bhardwaj.5",twitter:"",linkedin:"",contact:""},
- //    {name:"Kishan",title:"Activist",image:"../assets/rabhusan.jpg",organisation:"",gmail:"",facebook:"https://www.facebook.com/ravibhusan.kumar.77",twitter:"",linkedin:"",contact:""},
- //    {name:"Rohan",title:"Promoter",image:"../assets/chandra.jpg",organisation:"",gmail:"",facebook:"https://www.facebook.com/profile.php?id=100007495692564",twitter:"",linkedin:"",contact:""},
- //  ]
 
+ membersData = MembersData;
   constructor() { }
 
   ngOnInit() {
+   
   }
-
+  
 }

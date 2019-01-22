@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activity.component.css']
 })
 export class ActivityComponent implements OnInit {
+  show : boolean = false ;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  showSection(){
+    this.show = !this.show ;
   }
 
 }

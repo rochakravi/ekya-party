@@ -1,3 +1,66 @@
+.header{
+  font-weight: bold ;
+}
+
+.key-points{
+  font-weight: bold ;
+      color: red;
+}
+.points-eng{
+      color: #f35a0e;
+    font-weight: bold;
+}
+.points-hin{
+   color: green;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .notice-links{
   display: inline-block;
   width: 49%;
